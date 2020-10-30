@@ -1,0 +1,58 @@
+<div class="banner" style="background-image: url(<%= @flat.picture %>)"></div>
+<!-- <img class="banner" src=<%= @flat.picture %> alt=""> -->
+<div class="container w-75 justify-content-center margin-top-negative">
+  <div class="d-flex justify-content-center">
+    <div class="m-3 show-left">
+      <div class="card-border">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="card-border p-3">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+    <div class="m-3">
+      <div class="card-border p-3">
+        <p>Book this place!</p>
+        <form action="">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">From:</span><input type="text" class="form-control" placeholder="12/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mt-2">
+            <span class="input-group-addon" id="basic-addon1">To:</span>
+            <input type="text" class="form-control" placeholder="18/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+        </form>
+      </div>
+      <div class="card-border mt-2 p-3">
+        <h2>Details</h2>
+        <div class="d-flex text-align-center">
+          <i class="fas fa-users"></i>
+          <p class="mr-2"><%= @flat.number_of_guests %></p>
+          <i class="fas fa-euro-sign"></i>
+          <p><%= @flat.price_per_night %></p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between card-border p-3">
+        <p>Share</p>
+        <ul class="list-inline d-flex font">
+          <li class="m-1">
+            <i class="fab fa-facebook"></i>
+          </li>
+          <li class="m-1">
+            <i class="fab fa-twitter"></i>
+          </li>
+          <li class="m-1">
+            <i class="fab fa-pinterest"></i>
+          </li>
+          <li class="m-1">
+            <i class="fab fa-mail"></i>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

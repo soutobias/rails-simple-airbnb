@@ -1,0 +1,12 @@
+<%= simple_form_for(flat) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :picture %>
+  <%= f.input :description %>
+  <%= f.input :number_of_guests %>
+  <%= f.input :price_per_night %>
+  <div class="d-flex">
+    <%= f.submit class: "btn btn-primary m-1"%>
+    <%= link_to 'Back', flats_path, class: "btn btn-danger m-1"%>
+  </div>
+<% end %>
